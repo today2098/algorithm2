@@ -5,6 +5,9 @@
 		}
 	],
 	"settings": {
-		"workbench.colorTheme": "Visual Studio Dark - C++"
+		"workbench.colorTheme": "Visual Studio Dark - C++",
+		"files.associations": {
+			"chrono": "cpp"
+		}
 	}
 }
