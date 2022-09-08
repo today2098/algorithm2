@@ -665,5 +665,20 @@
 			"}"
 		],
 		"description": ""
+	},
+	"table": {
+		"scope": "cpp",
+		"prefix": "table",
+		"body": [
+			"template <typename Type>",
+			"std::vector<Type> table(size_t n, Type val) { return std::vector<Type>(n, val); }",
+			"",
+			"template <class... Args>",
+			"auto table(size_t n, Args &&...args) {",
+			"    auto val = table(std::forward<Args>(args)...);",
+			"    return std::vector<decltype(val)>(n, std::move(val));",
+			"}"
+		],
+		"description": "多次元配列生成"
 	}
 }
