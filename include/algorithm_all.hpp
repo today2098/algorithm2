@@ -3,4 +3,5 @@
 #include "math_combinatorics.hpp"
 #include "math_number_theory.hpp"
 #include "other.hpp"
+#include "string_algo.hpp"
 #include "useful.hpp"
