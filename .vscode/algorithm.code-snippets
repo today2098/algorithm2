@@ -788,6 +788,21 @@
 		],
 		"description": "最大公約数，最小公倍数"
 	},
+	"is_prime": {
+		"scope": "cpp",
+		"prefix": "is_prime",
+		"body": [
+			"// 素数判定．O(√N).",
+			"bool is_prime(long long n) {",
+			"    if(n < 2) return false;",
+			"    for(long long p = 2; p * p <= n; ++p) {",
+			"        if(n % p == 0) return false;",
+			"    }",
+			"    return true;",
+			"}"
+		],
+		"description": "素数判定"
+	},
 	"split": {
 		"scope": "cpp",
 		"prefix": "split",
