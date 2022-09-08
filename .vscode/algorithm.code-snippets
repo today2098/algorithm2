@@ -803,6 +803,25 @@
 		],
 		"description": "素数判定"
 	},
+	"prime_factorize": {
+		"scope": "cpp",
+		"prefix": "prime_factorize",
+		"body": [
+			"// 素因数分解．O(√N).",
+			"template <typename Type>",
+			"std::map<Type, int> prime_factorize(Type n) {",
+			"    assert(n >= 2);",
+			"    std::map<Type, int> mp;  // mp[p]:=(自然数nに含まれる素因数pの個数).",
+			"    for(Type p = 2; p * p <= n; ++p) {",
+			"        if(n % p != 0) continue;",
+			"        while(n % p == 0) mp[p]++, n /= p;",
+			"    }",
+			"    if(n != 1) mp[n]++;",
+			"    return mp;",
+			"}"
+		],
+		"description": "素因数分解"
+	},
 	"split": {
 		"scope": "cpp",
 		"prefix": "split",
