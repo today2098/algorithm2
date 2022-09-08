@@ -779,6 +779,15 @@
 		],
 		"description": "座標圧縮"
 	},
+	"igcd, ilcm": {
+		"scope": "cpp",
+		"prefix": "igcd, ilcm",
+		"body": [
+			"template<typename Type> Type igcd(Type a,Type b){return (b==0)?a:igcd(b,a%b);}",
+			"template<typename Type> Type ilcm(Type a,Type b){return a/igcd(a,b)*b;}"
+		],
+		"description": "最大公約数，最小公倍数"
+	},
 	"split": {
 		"scope": "cpp",
 		"prefix": "split",
