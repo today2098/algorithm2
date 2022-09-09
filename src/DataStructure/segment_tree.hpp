@@ -48,7 +48,7 @@ public:
         while(k >>= 1) tree[k] = op(tree[k << 1], tree[(k << 1) | 1]);
     }
     // k番目の要素をaを加える．O(logN).
-    void set(int k, const T &a) {
+    void add(int k, const T &a) {
         assert(0 <= k and k < sz);
         k += n;
         tree[k] += a;
