@@ -109,6 +109,54 @@
 		],
 		"description": "Print container"
 	},
+	"Define LazySegTree (RAQ, RMQ)": {
+		"scope": "cpp",
+		"prefix": "Define LazySegTree (RAQ, RMQ)",
+		"body": [
+			"using Monoid=${1:int};",
+			"using Action=${2:int};",
+			"const Monoid e=${3:INF};",
+			"const Action id=${4:0};",
+			"auto op=[&](Monoid a,Monoid b)->Monoid{return ${5:min(a,b)};};",
+			"auto action=[&](Monoid &a,Action d)->void{${6:a+=d};};",
+			"auto composition=[&](Action &d,Action f)->void{${7:d+=f};};",
+			"LazySegTree<Monoid,Action> tree(op,action,composition,e,id,${8:vector<int>(0,0)});"
+		],
+		"description": "区間加算，区間min取得"
+	},
+	"Define LazySegTree (RAQ, RSQ)": {
+		"scope": "cpp",
+		"prefix": "Define LazySegTree (RAQ, RSQ)",
+		"body": [
+			"using Monoid=${1:struct{",
+			"    ll val;",
+			"    int sz;",
+			"}};",
+			"using Action=${2:ll};",
+			"const Monoid e=${3:(Monoid){0,0}};",
+			"const Action id=${4:0};",
+			"const auto op=[&](Monoid a,Monoid b)->Monoid{return ${5:(Monoid){a.val+b.val,a.sz+b.sz}};};",
+			"const auto action=[&](Monoid &a,Action d)->void{${6:a.val+=d*a.sz};};",
+			"const auto composition=[&](Action &d,Action f)->void{${7:d+=f};};",
+			"LazySegTree<Monoid,Action> tree(op,action,composition,e,id,vector<Monoid>(${8:0},${9:(Monoid){0,1}}));"
+		],
+		"description": "区間加算，区間和取得"
+	},
+	"Define LazySegTree (RUQ, RMQ)": {
+		"scope": "cpp",
+		"prefix": "Define LazySegTree (RUQ, RMQ)",
+		"body": [
+			"using Monoid=${1:int};",
+			"using Action=${2:int};",
+			"const Monoid e=${3:INF};",
+			"const Action id=${4:INF};",
+			"auto op=[&](Monoid a,Monoid b)->Monoid{return ${5:min(a,b)};};",
+			"auto action=[&](Monoid &a,Action d)->void{${6:a=(d==id?a:d)};};",
+			"auto composition=[&](Action &d,Action f)->void{${7:d=(f==id?d:f)};};",
+			"LazySegTree<Monoid,Action> tree(op,action,composition,e,id,${8:0});"
+		],
+		"description": "区間更新，区間min取得"
+	},
 	"Define SegmentTree (RMQ)": {
 		"scope": "cpp",
 		"prefix": "Define SegmentTree (RMQ)",
