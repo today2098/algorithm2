@@ -6,4 +6,5 @@
 #include "../src/MathNumberTheory/mod_pow.hpp"
 #include "../src/MathNumberTheory/modint.hpp"
 #include "../src/MathNumberTheory/prime_factorize.hpp"
+#include "../src/MathNumberTheory/segment_sieve.hpp"
 #include "../src/MathNumberTheory/sieve.hpp"
