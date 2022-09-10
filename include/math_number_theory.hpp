@@ -2,6 +2,7 @@
 #include "../src/MathNumberTheory/dynamic_modint.hpp"
 #include "../src/MathNumberTheory/igcd_ilcm.hpp"
 #include "../src/MathNumberTheory/is_prime.hpp"
+#include "../src/MathNumberTheory/mod_inv.hpp"
 #include "../src/MathNumberTheory/mod_pow.hpp"
 #include "../src/MathNumberTheory/modint.hpp"
 #include "../src/MathNumberTheory/prime_factorize.hpp"
