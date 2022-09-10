@@ -1462,6 +1462,25 @@
 		],
 		"description": "最長増加部分列 (LIS:Longest Increasing Subsequence)"
 	},
+	"mod_pow": {
+		"scope": "cpp",
+		"prefix": "mod_pow",
+		"body": [
+			"// 繰返し二乗法（mod付き）．n^k (mod m)を求める．O(logK).",
+			"long long mod_pow(long long n, long long k, int m) {",
+			"    assert(k >= 0 and m >= 1);",
+			"    n %= m;",
+			"    long long res = 1;",
+			"    while(k > 0) {",
+			"        if(k & 1LL) res = res * n % m;",
+			"        n = n * n % m;",
+			"        k >>= 1;",
+			"    }",
+			"    return res;",
+			"}"
+		],
+		"description": "繰返し二乗法（mod付き）"
+	},
 	"prime_factorize": {
 		"scope": "cpp",
 		"prefix": "prime_factorize",
