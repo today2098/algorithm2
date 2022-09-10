@@ -5,4 +5,5 @@
 #include "../src/DataStructure/heap.hpp"
 #include "../src/DataStructure/lazy_segment_tree.hpp"
 #include "../src/DataStructure/segment_tree.hpp"
+#include "../src/DataStructure/serial_set.hpp"
 #include "../src/DataStructure/union_find.hpp"
