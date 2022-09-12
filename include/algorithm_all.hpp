@@ -1,5 +1,6 @@
 #include "data_structure.hpp"
 #include "graph.hpp"
+#include "math_algebra.hpp"
 #include "math_combinatorics.hpp"
 #include "math_number_theory.hpp"
 #include "other.hpp"
