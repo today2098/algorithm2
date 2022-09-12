@@ -6,7 +6,8 @@
 
 namespace algorithm {
 
-// きたまさ法．k項間漸化式 a[n]=d[0]*a[n-k]+d[1]*a[n-k+1]+....+d[k-1]*a[n-1] を求める．
+// きたまさ法．
+// k項間漸化式 a[n]=d[0]*a[n-k]+d[1]*a[n-k+1]+....+d[k-1]*a[n-1] を求める．O((K^2)*logN).
 template <typename T = long long>
 class Kitamasa {
     int k;             // k:=(漸化式の階数).
@@ -49,7 +50,6 @@ public:
         assert(k >= 1 and a.size() == d.size());
     }
 
-    // a[n]を返す．O((K^2)*logN).
     T operator[](long long n) const { return calc(n); }
 
     // a[n]を返す．O((K^2)*logN).
