@@ -2,6 +2,7 @@
 #include "../src/Graph/dijkstra.hpp"
 #include "../src/Graph/dinic.hpp"
 #include "../src/Graph/ford_fulkerson.hpp"
+#include "../src/Graph/low_link.hpp"
 #include "../src/Graph/lowest_common_ancestor.hpp"
 #include "../src/Graph/prim.hpp"
 #include "../src/Graph/primal_dual.hpp"
