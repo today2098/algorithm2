@@ -6,3 +6,4 @@
 #include "../src/Graph/lowest_common_ancestor.hpp"
 #include "../src/Graph/prim.hpp"
 #include "../src/Graph/primal_dual.hpp"
+#include "../src/Graph/strongly_connected_components.hpp"
