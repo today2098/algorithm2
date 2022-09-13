@@ -31,7 +31,8 @@
 			"constexpr int       INF  = 1e9;",
 			"constexpr long long LINF = 1e18;",
 			"constexpr double    EPS  = 1e-10;",
-			"constexpr int       MOD  = 1e9+7;",
+			"constexpr int       MOD  = 998'244'353;",
+			"constexpr int       MOD2 = 1e9+7;",
 			"",
 			"int main(){}"
 		],
