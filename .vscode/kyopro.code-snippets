@@ -109,6 +109,25 @@
 		],
 		"description": "Print container"
 	},
+	"using r_priority_queue": {
+		"scope": "cpp",
+		"prefix": "using r_priority_queue",
+		"body": [
+			"template <typename Type>",
+			"using r_priority_queue = std::priority_queue<Type,vector<Type>,greater<Type> >;"
+		],
+		"description": ""
+	},
+	"using vt, vvt, vvvt": {
+		"scope": "cpp",
+		"prefix": "using vt, vvt, vvvt",
+		"body": [
+			"template<typename Type> using vt   = std::vector<Type>;",
+			"template<typename Type> using vvt  = std::vector<vt<Type> >;",
+			"template<typename Type> using vvvt = std::vector<vvt<Type> >;"
+		],
+		"description": ""
+	},
 	"Define dy[], dx[]": {
 		"scope": "cpp",
 		"prefix": "Define dy[], dx[]",
