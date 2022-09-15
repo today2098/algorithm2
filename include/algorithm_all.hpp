@@ -1,4 +1,5 @@
 #include "data_structure.hpp"
+#include "geometry_algo.hpp"
 #include "graph.hpp"
 #include "math_algebra.hpp"
 #include "math_combinatorics.hpp"
