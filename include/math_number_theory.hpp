@@ -1,5 +1,6 @@
 #include "../src/MathNumberTheory/calc_divisor.hpp"
 #include "../src/MathNumberTheory/dynamic_modint.hpp"
+#include "../src/MathNumberTheory/extgcd.hpp"
 #include "../src/MathNumberTheory/igcd_ilcm.hpp"
 #include "../src/MathNumberTheory/is_prime.hpp"
 #include "../src/MathNumberTheory/liner_sieve.hpp"
