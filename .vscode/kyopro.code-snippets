@@ -235,7 +235,7 @@
 		"prefix": "using r_priority_queue",
 		"body": [
 			"template <typename Type>",
-			"using r_priority_queue = std::priority_queue<Type,vector<Type>,greater<Type> >;"
+			"using r_priority_queue = std::priority_queue<Type, std::vector<Type>, std::greater<Type> >;"
 		],
 		"description": ""
 	},
