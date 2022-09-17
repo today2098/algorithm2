@@ -326,4 +326,11 @@
 		],
 		"description": ""
 	},
+	"// I refer the editorial.": {
+		"prefix": "// I refer the editorial.",
+		"body": [
+			"// I refer the editorial."
+		],
+		"description": ""
+	}
 }
