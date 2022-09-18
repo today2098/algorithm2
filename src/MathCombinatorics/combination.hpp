@@ -67,6 +67,22 @@ public:
 using Combination998244353 = Combination<998'244'353>;
 using Combination1000000007 = Combination<1'000'000'007>;
 
+long long nPk(long long n, int k) {
+    assert(0 <= k and k <= n);
+    long long ans = 1;
+    for(int i = 0; i < k; ++i) ans = ans * (n - i);
+    return ans;
+}
+
+long long nCk(long long n, int k) {
+    assert(0 <= k and k <= n);
+    long long ans = 1;
+    for(int i = 0; i < k; ++i) ans = ans * (n - i) / (i + 1);
+    return ans;
+}
+
+long long nHk(long long n, int k) { return nCk(k + n - 1, n - 1); }
+
 }  // namespace algorithm
 
 #endif

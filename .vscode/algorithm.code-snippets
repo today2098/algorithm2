@@ -2788,6 +2788,28 @@
 		],
 		"description": "繰返し二乗法（mod付き）"
 	},
+	"nPk, nCk, nHk": {
+		"scope": "cpp",
+		"prefix": "nPk, nCk, nHk",
+		"body": [
+			"long long nPk(long long n, int k) {",
+			"    assert(0 <= k and k <= n);",
+			"    long long ans = 1;",
+			"    for(int i = 0; i < k; ++i) ans = ans * (n - i);",
+			"    return ans;",
+			"}",
+			"",
+			"long long nCk(long long n, int k) {",
+			"    assert(0 <= k and k <= n);",
+			"    long long ans = 1;",
+			"    for(int i = 0; i < k; ++i) ans = ans * (n - i) / (i + 1);",
+			"    return ans;",
+			"}",
+			"",
+			"long long nHk(long long n, int k) { return nCk(k + n - 1, n - 1); }"
+		],
+		"description": "順列，組み合わせ"
+	},
 	"prime_factorize": {
 		"scope": "cpp",
 		"prefix": "prime_factorize",
